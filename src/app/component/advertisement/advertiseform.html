@@ -1,0 +1,13 @@
+<div class="container">
+<p>Title : <input type="text" #title class="form-control" placeholder="Advertise Title" ></p>
+<p>Name : <input type="text" #name class="form-control" placeholder="Advertise Name" ></p>
+<p>Description : <input type="text" #desc class="form-control" placeholder="Advertise Description" >
+</p>
+
+<select >
+  <option *ngFor="let category of categories" [value]= "category.cid">{{category.value}}</option>
+</select>
+<hr>
+<button #btn1 class="btn-primary btn-sm">Submit</button>
+</div>
+
